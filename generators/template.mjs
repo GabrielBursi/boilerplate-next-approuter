@@ -27,7 +27,7 @@ export default function (plop) {
             {
                 type: 'add',
                 path: '../src/templates/{{pascalCase name}}/test.tsx',
-                templateFile: 'templates/test.tsx.hbs'
+                templateFile: 'templates/test.spec.tsx.hbs'
             },
             {
                 type: 'add',
