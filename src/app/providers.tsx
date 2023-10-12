@@ -1,12 +1,20 @@
-import { PropsWithChildren } from 'react'
+'use client'
 
-import GlobalStyles from '@/styles/global'
+import { PropsWithChildren } from 'react'
+import { ThemeProvider } from 'styled-components'
+
+import { GlobalStyles, theme } from '../styles'
+import StyledComponentsRegistry from '../lib/registry'
 
 export function Providers({ children }: PropsWithChildren) {
 	return (
 		<>
 			<GlobalStyles />
-			{children}
+			<StyledComponentsRegistry>
+				<ThemeProvider theme={theme}>
+					{children}
+				</ThemeProvider>
+			</StyledComponentsRegistry>
 		</>
 	)
 }
