@@ -27,7 +27,7 @@ Siga as etapas abaixo para começar a usar o template:
 
 1. Digite no terminal o seguinte comando: 
 ```bash
-npx create-next-app -e https://github.com/GabrielBursi/boilerplate nome-do-projeto
+npx create-next-app -e https://github.com/GabrielBursi/boilerplate-next-approuter nome-do-projeto
 ```
 2. Abra a pasta do projeto criado.
 3. Instale as dependências do projeto usando o seguinte comando: 
