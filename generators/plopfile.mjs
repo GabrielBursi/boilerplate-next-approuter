@@ -17,27 +17,27 @@ export default function (plop) {
             {
                 type: 'add',
                 path: '../src/components/{{pascalCase name}}/index.tsx',
-                templateFile: 'templates/index.tsx.hbs'
+                templateFile: 'templates/components/index.tsx.hbs'
             },
             {
                 type: 'add',
                 path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
-                templateFile: 'templates/stories.stories.tsx.hbs'
+                templateFile: 'templates/components/stories.stories.tsx.hbs'
             },
             {
                 type: 'add',
                 path: '../src/components/{{pascalCase name}}/styles.ts',
-                templateFile: 'templates/styles.ts.hbs'
+                templateFile: 'templates/components/styles.ts.hbs'
             },
             {
                 type: 'add',
                 path: '../src/components/{{pascalCase name}}/test.tsx',
-                templateFile: 'templates/test.spec.tsx.hbs'
+                templateFile: 'templates/components/test.spec.tsx.hbs'
             },
             {
                 type: 'add',
                 path: '../src/components/{{pascalCase name}}/types.ts',
-                templateFile: 'templates/types.ts.hbs'
+                templateFile: 'templates/components/types.ts.hbs'
             }
         ]
     });

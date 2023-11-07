@@ -13,7 +13,8 @@
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"generate": "plop --plopfile ./generators/plopfile.mjs",
-		"generate:t": "plop --plopfile ./generators/template.mjs"
+		"generate:t": "plop --plopfile ./generators/template.mjs",
+		"generate:p": "plop --plopfile ./generators/page.mjs"
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.9.7",
