@@ -10,8 +10,8 @@ const config: Config = {
 	modulePaths: ['<rootDir>/src'],
 	testPathIgnorePatterns: ['/node_modules/', '/.next/'],
 	collectCoverageFrom: [
-		'/src/components/**/test.spec.ts(x)',
-		'/src/templates/**/test.spec.ts(x)',
+		'src/components/**/*.tsx',
+		'src/templates/**/*.tsx',
 		'!src/app/**', // should be tested in e2e
 		'!src/lib/registry.tsx',
 		'!src/types/**',
