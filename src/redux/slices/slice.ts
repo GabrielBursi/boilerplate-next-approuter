@@ -1,17 +1,19 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-
+	example: true
 }
 
 export const slice = createSlice({
     name: 'slice',
     initialState,
     reducers: {
-        
+		setExample: (state, { payload }: PayloadAction<boolean>) => {
+			state.example = payload
+		}
     },
 })
 
-export const {  } = slice.actions
+export const { setExample } = slice.actions
 
 export default slice.reducer
